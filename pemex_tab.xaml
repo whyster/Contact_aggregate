@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="accountability_contacts.pemex_tab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:accountability_contacts"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0">Pemex Contacts</TextBlock>
+            <ListBox x:Name="contact_list" Grid.Row="1" SelectionChanged="contact_list_SelectionChanged">
+            </ListBox>
+            <Grid x:Name="contact_box" Grid.Row="2"></Grid>
+        </Grid>
+
+
+    </Grid>
+</UserControl>

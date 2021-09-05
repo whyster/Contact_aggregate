@@ -1,0 +1,25 @@
+﻿<Window x:Class="accountability_contacts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:accountability_contacts"
+        mc:Ignorable="d"
+        Title="Energy and Oil contact aggregate" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="ExxonMobil">
+                <local:ExxonTab></local:ExxonTab>
+            </TabItem>
+            <TabItem Header="Pemex">
+                <local:pemex_tab></local:pemex_tab>
+            </TabItem>
+            <TabItem Header="BP">
+                <local:BP_Tab></local:BP_Tab>
+            </TabItem>
+            <TabItem Header="Sinopec">
+                <local:Sinopec_tab></local:Sinopec_tab>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
